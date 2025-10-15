@@ -1,0 +1,247 @@
+/* ==== Variables ==== */
+:root {
+  --primary: #0073e6;
+  --secondary: #449DA0;
+  --text-dark: #333;
+  --text-light: #776E6E;
+  --bg-light: #fff;
+}
+
+/* ==== Global Styles ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-dark);
+  background: var(--bg-light);
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==== Top Heading ==== */
+#top {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: slategray;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* ==== Navbar ==== */
+header {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+  justify-content: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ==== Button ==== */
+.button {
+  padding: 10px 20px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.button:hover {
+  background: #005bb5;
+}
+
+/* ==== Sections ==== */
+section {
+  padding: 60px 10%;
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* ==== Home ==== */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+}
+.home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.home-text span {
+  color: var(--secondary);
+}
+.home-text p {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+/* ==== About ==== */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10%;
+}
+.about-text p {
+  font-size: 25px;
+  color: var(--text-light);
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* ==== Skills ==== */
+.skills .container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  flex: 1;
+  min-width: 280px;
+  background: #E9C3C3/*#DB7C7D*//*#E3D185*/ /*#fdf7d3*//*#C4B9B9*/;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.skills-text {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+li {
+  text-align: left;
+  margin: 6px 0;
+}
+
+/* ==== Projects ==== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+#project-head {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  line-height:center;
+}
+.project-card {
+  background: #C3E9E9;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.project-card a {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* ==== Certifications ==== */
+.certificate .cert-text ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin: 0;
+  padding-top: 30px;
+}
+.certificate .cert-text li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* ==== Education ==== */
+#education-text{
+  list-style-type: none;  
+  text-align: center;      
+  color: var(--text-light);        
+  font-size: 25px;
+  font-family: 'Roboto', serif;;
+  font-weight:bold;
+  margin-top:0;
+}
+
+/* ==== Contact ==== */
+.contact p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.contact a {
+  text-decoration: none;
+  color: var(--primary);
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Footer ==== */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .home, .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+}
+
+/* === Smooth scroll */
+html{
+  scroll-behavior: smooth;
+}
