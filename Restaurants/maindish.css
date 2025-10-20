@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    background-image:url('https://cdn.tasteatlas.com/Images/Dishes/9a74b54fa5c043aebaeb445898a1beb1.jpg?w=905&h=510');
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+header {
+    font-size: 20px;
+    text-align: center;
+    color:#fff;
+    background-color:rgb(180, 84, 116);
+    line-height:2px;
+    padding:2px;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    
+}
+
+.menu-item {
+    width: 300px;
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.menu-item span {
+    color: #ff7f50;
+    font-weight: bold;
+    font-size: 18px;
+}
+ 
+#selection{
+text-align:center;
+margin-right:100px;
+}
+
+button{
+    height:auto;
+    width:auto;
+    transition-property:all;
+}
+button:active{
+    background-color: cornflowerblue;
+}
+
+footer{
+    text-align:center;
+    background-color:rgb(180, 84, 116);
+    color:white;
+    height:60px;
+}
